@@ -1,11 +1,10 @@
 // Definir la version de Sol.
-pragma solidity ^0.6.2;
-
+pragma solidity ^0.8.0;
 // Importar otros contratos.
-// Crear contrato propio Y ( tenmemos una funcion constructor() )
 // import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.4/contracts/token/ERC20/ERC20.sol";
-
+// import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.4/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+// Crear contrato propio Y ( tenmemos una funcion constructor() )
 contract EPPRCoin is ERC20 {
 
     constructor() public ERC20("EPPRCoin", "EPPR") {
